@@ -1,1 +1,18 @@
 #Typedefs can go here as well
+
+type Club {
+    id: ID!
+    name: String
+    shortName: String
+    clubCode: String
+}
+
+input SearchClub {
+    name: String
+    clubCode: String
+}
+
+type Query {
+    club(name: String!): Club
+    searchClub(search: SearchClub): Club
+}

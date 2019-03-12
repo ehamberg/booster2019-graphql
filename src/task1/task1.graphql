@@ -1,1 +1,9 @@
 #Typedefs can go here as well
+
+type Query {
+    id: ID
+    hello: String!
+    number: Int
+    float: Float
+    isTrue: Boolean
+}
